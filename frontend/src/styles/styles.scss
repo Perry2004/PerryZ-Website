@@ -17,18 +17,11 @@ body {
     bottom: 3rem;
     white-space: nowrap;
     position: relative;
-    bottom: 3rem;
 }
 
 .pexels-img {
     margin: 0 0.5rem;
-}
-
-.pexels-img-placeholder {
-    width: 15%;
-    aspect-ratio: 3/4;
-    padding: 0;
-    display: none;
+    @include border-radius;
 }
 
 .pexels-img-group {
