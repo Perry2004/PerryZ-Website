@@ -1,2 +1,23 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
+
+body {
+    min-height: 100vh;
+}
+
+#front-page {
+    height: 100vh;
+}
+
+#hello-world {
+    font-size: 3rem;
+}
+
+#pexel-img-container {
+    position: relative;
+    bottom: 3rem;
+}
+
+.pexel-img {
+    margin: 0 0.5rem;
+}
