@@ -5,12 +5,16 @@ body {
     min-height: 100vh;
 }
 
+nav {
+    background-color: white;
+}
+
 #front-page {
     height: 100vh;
 }
 
 #hello-world {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 #pexels-img-container {
@@ -36,4 +40,30 @@ body {
     to {
         transform: translateX(-100%);
     }
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.about-me-text {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 5px solid;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 5s rotate-rainbow linear infinite;
+}
+
+// thanks to https://www.bram.us/2021/01/29/animating-a-css-gradient-border/
+@keyframes rotate-rainbow {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
 }
