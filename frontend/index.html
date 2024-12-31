@@ -10,8 +10,8 @@
 
   <body>
 
-    <!-- nav bar -->
-    <nav class="navbar position-fixed top-0 start-0 w-100">
+    nav bar
+    <nav class="navbar position-fixed top-0 start-0 w-100 z-1">
       <div class="container-fluid fs-3">
         Perry Zhu
       </div>
@@ -29,7 +29,7 @@
             <p class="fs-4">
               Hi, I'm <em>Perry Zhu</em>, a Computer Science and Statistics undergraduate at the University of British
               Columbia
-              (UBC). <br>
+              (UBC). <br><br>
               I'm passionate about software development, machine learning, and computer graphics. Explore my
               projects, skills, and experiences here!
             </p>
@@ -88,138 +88,364 @@
             I'm always eager to explore new technologies and take on challenging projects that allow me to grow as a
             developer.
           </p>
-          <a href="src/assets/coop_resume_sw.pdf" download="Perry-Z_resume.pdf" class="btn btn-outline-primary"><i class="bi bi-file-earmark-person"></i> Check my resume</a>
+          <a href="src/assets/coop_resume_sw.pdf" download="Perry-Z_resume.pdf" class="btn btn-outline-primary"><i
+              class="bi bi-file-earmark-person"></i> Check my resume</a>
         </div>
 
       </div>
 
       <!-- projects -->
       <div class="row pb-3">
-        <div class="row">
+        <div class="row my-5">
           <h2>
             Projects
           </h2>
         </div>
 
-        <div class="row justify-content-evenly  row-gap-5 ">
+        <div class="row justify-content-evenly row-gap-5">
 
           <div class="col-5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                  <span class="placeholder col-6"></span>
-                </h5>
-                <h6 class="card-subtitle placeholder-glow">
-                  <span class="placeholder col-5"></span>
-                </h6>
-                <div class="card-text placeholder-glow">
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                  <span class="placeholder col-5"></span>
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                  <span class="placeholder col-5"></span>
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                </div>
-                <div class="card-link"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                  <span class="placeholder col-6"></span>
-                </h5>
-                <h6 class="card-subtitle placeholder-glow">
-                  <span class="placeholder col-5"></span>
-                </h6>
-                <div class="card-text placeholder-glow">
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                  <span class="placeholder col-5"></span>
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                  <span class="placeholder col-5"></span>
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                </div>
-                <div class="card-link"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-5">
-            <div class="card">
-              <div class="card-body">
-                <h5 class="card-title placeholder-glow">
-                  <span class="placeholder col-6"></span>
-                </h5>
-                <h6 class="card-subtitle placeholder-glow">
-                  <span class="placeholder col-5"></span>
-                </h6>
-                <div class="card-text placeholder-glow">
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                  <span class="placeholder col-5"></span>
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                  <span class="placeholder col-5"></span>
-                  <span class="placeholder col-7"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-4"></span>
-                  <span class="placeholder col-6"></span>
-                  <span class="placeholder col-8"></span>
-                </div>
-                <div class="card-link"></div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-5">
-            <div class="card">
+            <div class="card project-card">
               <div class="card-body">
                 <h5 class="card-title">
-                  Project 1
+                  Personal Website
                 </h5>
                 <h6 class="card-subtitle">
-                  lorem ipsum
+                  Full-Stack Web Design & Development With HTML, CSS, and JavaScript
                 </h6>
-                <div class="card-text">
-                  <ul>
-                    <li>Built and hosted a full-stack website using HTML5, Sass, Three.js, and WebGL for 3D graphics.
-                    </li>
-                    <li>Hosted on an AWS Linux EC2 instance with a Node.js backend and Express framework.</li>
-                    <li>Currently integrating a MySQL database for user data storage.</li>
-                  </ul>
+
+                <div class="accordion accordion-flush" id="accordionFlushOne">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushOne-collapseOne" aria-expanded="false"
+                        aria-controls="flushOne-collapseOne">
+                        Built and hosted a full-stack website using HTML5, Sass, Three.js, and WebGL for 3D graphics.
+                      </button>
+                    </h2>
+                    <div id="flushOne-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushOne">
+                      <div class="accordion-body">
+                        The website is designed to showcase my projects, skills, and experiences in a visually appealing
+                        and interactive way. The frontend is built with HTML5, Bootstrap, Sass, TypeScript, and
+                        Three.js. The website is designed in a responsive manner to ensure compatibility with different
+                        devices and screen sizes.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushOne-collapseTwo" aria-expanded="false"
+                        aria-controls="flushOne-collapseTwo">
+                        Hosted on an AWS Linux EC2 instance with a Node.js backend and Express framework.
+                      </button>
+                    </h2>
+                    <div id="flushOne-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushOne">
+                      <div class="accordion-body">
+                        The backend is constructed with Node.js and Express. It is hosted on an AWS Linux EC2 instance
+                        on my personal domain. The backend is responsible for serving the frontend, handling API
+                        requests, and managing user data. The website is designed to be scalable and maintainable, with
+                        a focus on performance and security.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushOne-collapseThree" aria-expanded="false"
+                        aria-controls="flushOne-collapseThree">
+                        Currently integrating a MySQL database for user data storage.
+                      </button>
+                    </h2>
+                    <div id="flushOne-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushOne">
+                      <div class="accordion-body">
+                        I'm currently working on integrating a MySQL database to the back end to store some data and
+                        handle API requests. A rough idea was to create a postboard where visitors can leave comments
+                        along with their names and emails.
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="card-link"></div>
+
+                <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                  <a href="https://github.com/Perry2004/PerryZ-Website" target="_blank"
+                    class="icon-link icon-link-hover d-flex align-items-start">
+                    <i class="bi bi-github"></i> Check GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  NYC Airbnb Reviews ML Prediction
+                </h5>
+                <h6 class="card-subtitle">
+                  Supervised Machine Learning Project Using Python and Multiple Models
+                </h6>
+
+                <div class="accordion accordion-flush" id="accordionFlushTwo">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseOne" aria-expanded="false"
+                        aria-controls="flushTwo-collapseOne">
+                        Developed machine learning pipelines using Python to predict the number of Airbnb reviews per
+                        month.
+                      </button>
+                    </h2>
+                    <div id="flushTwo-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">
+                        Using <code>Python</code>, <code>NumPy</code>, <code>Pandas</code>, <code>Scikit-learn</code>,
+                        and <code>MatPlotLib</code>, I developed several machine learning pipelines and visualized and
+                        evaluated their performance on the NYC Airbnb dataset.
+                        <br><br>
+                        The goal was to predict the number of reviews per month based on various features like price,
+                        location, and room type.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseTwo" aria-expanded="false"
+                        aria-controls="flushTwo-collapseTwo">
+                        Performed extensive preprocessing and feature engineering to improve model performance.
+                      </button>
+                    </h2>
+                    <div id="flushTwo-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">
+                        To achieve higher performance and interpretability, multiple preprocessing and feature
+                        engineering techniques were applied to the dataset.
+                        <br><br>
+                        <ul>
+                          <li>Imputation: instances with missing values in the target column are removed, numerical
+                            features are imputed with the mean, and categorical features are imputed with "missing".
+                          </li>
+                          <li>Standardization: numerical features are standardized using the StandardScaler.</li>
+                          <li>Categorical Encoding: categorical features are encoded using the OneHotEncoder.</li>
+                          <li>Text encoding: text features are encoded using the CountVectorizer.</li>
+                          <li>Discretization: the location features are discretized into bins using the
+                            KBinsDiscretizer.</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseThree" aria-expanded="false"
+                        aria-controls="flushTwo-collapseThree">
+                        Achieved interpretability using SHAP and reduced overfitting with feature selection.
+                      </button>
+                    </h2>
+                    <div id="flushTwo-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushTwo">
+                      <div class="accordion-body">
+                        To explain the model predictions and reduce overfitting, the SHAP library was used to generate a
+                        additive plot to show the impact of each feature on the model prediction.
+                        <br><br>
+                        After checking if they make sense, I performed feature selection using
+                        <code>SelectFromModel</code> to reduce the number of features and improve the model's
+                        generalization.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                  <a href="https://github.com/Perry2004/NYC-Airbnb-Reviews-ML-Prediction" target="_blank"
+                    class="icon-link icon-link-hover d-flex align-items-start">
+                    <i class="bi bi-github"></i> Check GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-5">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  UNO Game Management System
+                </h5>
+                <h6 class="card-subtitle">
+                  Full-Stack Data Management Project with MySQL Database
+                </h6>
+
+                <div class="accordion accordion-flush" id="accordionFlushThree">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushThree-collapseOne" aria-expanded="false"
+                        aria-controls="flushThree-collapseOne">
+                        Designed a full-stack system for managing UNO game data with a RESTful API.
+                      </button>
+                    </h2>
+                    <div id="flushThree-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushThree">
+                      <div class="accordion-body">
+                        This is project is a full-stack data management system using <code>Node.js</code>,
+                        <code>Express</code>, and <code>MySQL</code>.
+                        <br><br>
+                        The system is designed to store information about the players, games, and cards. The system is
+                        designed to be user-friendly and easy to use.
+                        The system provides features such as:
+
+                        <ul>
+                          <li>Player registration and information management</li>
+                          <li>Game creation and management including logging the game history</li>
+                          <li>Card management</li>
+                          <li>Game shopping and inventory management</li>
+                        </ul>
+                        A well-designed front-end interface is provided to interact with the backend MySQL database
+                        using Node.js and Express.js</li>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushThree-collapseTwo" aria-expanded="false"
+                        aria-controls="flushThree-collapseTwo">
+                        Built a dynamic front-end interface with JavaScript and asynchronous fetch requests.
+                      </button>
+                    </h2>
+                    <div id="flushThree-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushThree">
+                      <div class="accordion-body">
+                        Constructed a front-end interface with comprehensive form validation, clear visual
+                        notifications, animations, and smooth interaction by avoiding extra refresh using asynchronous
+                        fetches to replace the default form submission behavior using HTML, CSS, and JavaScript.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushThree-collapseThree" aria-expanded="false"
+                        aria-controls="flushThree-collapseThree">
+                        Implemented SQL queries with sanitization to prevent injection and ensure data security.
+                      </button>
+                    </h2>
+                    <div id="flushThree-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushThree">
+                      <div class="accordion-body">
+                        Tailored SQL DDLs and DML templates in the backend model with sanitization to prevent injection
+                        for functionalities, including nested group-by aggregation, division, and view creations to
+                        handle user request actions triggered by front-end event listeners.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                  <a href="https://github.com/Perry2004/UNO-Game-Management-System" target="_blank"
+                    class="icon-link icon-link-hover d-flex align-items-start">
+                    <i class="bi bi-github"></i> Check GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="card project-card">
+              <div class="card-body">
+                <h5 class="card-title">
+                  Two Player Snake Game
+                </h5>
+                <h6 class="card-subtitle">
+                  Real-Time Interactive Game With Java/MatLab
+                </h6>
+
+                <div class="accordion accordion-flush" id="accordionFlushFour">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushFour-collapseOne" aria-expanded="false"
+                        aria-controls="flushFour-collapseOne">
+                        Developed a real-time game of two versions using Java and MatLab.
+                      </button>
+                    </h2>
+                    <div id="flushFour-collapseOne" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushFour">
+                      <div class="accordion-body">
+                        Constructed a video game that allows two players to play the traditional Snake game on the
+                        same computer.
+                        <br><br>
+                        Developed the game firstly in MatLab with a game engine script by initializing the game
+                        window with self-created stripes, modeling the gameboard in a 2d matrix, maintaining a
+                        synchronous
+                        execution to tick the snake movements and food generation while handling user inputs
+                        asynchronously by event listeners and model updates with callback functions.
+                        <br><br>
+                        Later migrated the MatLab game to Java with two interfaces with Swing and Lanterna libraries
+                        in an object-oriented manner.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushFour-collapseTwo" aria-expanded="false"
+                        aria-controls="flushFour-collapseTwo">
+                        Applied design patterns like MVC and Observer for scalability and maintainability.
+                      </button>
+                    </h2>
+                    <div id="flushFour-collapseTwo" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushFour">
+                      <div class="accordion-body">
+                        The Java version is empowered with singleton, observer, and MVC design patterns to
+                        divide the project into separate components and hierarchies with well-specified interfaces for
+                        better maintainability and scalability.
+                        <br><br>
+                        The OOP design also features extra functionality for serializing and exporting all game data
+                        into JSON for further reuse.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed accordion-header" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#flushFour-collapseThree" aria-expanded="false"
+                        aria-controls="flushFour-collapseThree">
+                        Achieved 100% unit test coverage with JUnit.
+                      </button>
+                    </h2>
+                    <div id="flushFour-collapseThree" class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushFour">
+                      <div class="accordion-body">
+                        While migrating to Java, the program was tested with JUnit to ensure the correctness of the game
+                        logic and the robustness of the game engine. During the entire development process, the game
+                        maintained a 100% unit test coverage.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                  <a href="https://github.com/Perry2004/Two-Player-Snake-Game-Java" target="_blank"
+                    class="icon-link icon-link-hover d-flex align-items-start">
+                    <i class="bi external-icon icon-java"></i> Check Java version
+                  </a>
+                  <a href="https://github.com/Perry2004/Two-Player-Snake-Game-Matlab" target="_blank"
+                    class="icon-link icon-link-hover d-flex align-items-start">
+                    <i class="bi external-icon icon-matlab"></i> Check MatLab version
+                  </a>
+                </div>
               </div>
             </div>
           </div>

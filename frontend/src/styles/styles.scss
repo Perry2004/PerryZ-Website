@@ -1,6 +1,10 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
+:root {
+    --bs-icon-link-transform: translate3d(0, -.125rem, 0); // modify bootstrap icon link to move up on hover
+}
+
 body {
     min-height: 100vh;
 }
@@ -66,4 +70,49 @@ h2 {
     syntax: '<angle>';
     initial-value: 0deg;
     inherits: false;
+}
+
+.project-card {
+    height: 100%;
+    margin: 0 -1.5rem;
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+        padding-left: 0.5rem;
+    }
+
+    ul {
+        font-size: 1.25rem;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .accordion-header {
+        font-size: 1.25rem;
+    }
+
+    .accordion-body {
+        font-size: 1.25rem;
+    }
+}
+
+.external-icon {
+    background-size: contain;
+    align-self: center;
+}
+
+.icon-java {
+    background-image: url("src/assets/java-svgrepo-com.svg");
+}
+
+.icon-matlab {
+    background-image: url("src/assets/matlab-svgrepo-com.svg");
 }
