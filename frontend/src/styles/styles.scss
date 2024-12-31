@@ -13,11 +13,34 @@ body {
     font-size: 3rem;
 }
 
-#pexel-img-container {
+#pexels-img-container {
+    bottom: 3rem;
+    white-space: nowrap;
     position: relative;
     bottom: 3rem;
 }
 
-.pexel-img {
+.pexels-img {
     margin: 0 0.5rem;
+}
+
+.pexels-img-placeholder {
+    width: 15%;
+    aspect-ratio: 3/4;
+    padding: 0;
+    display: none;
+}
+
+.pexels-img-group {
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
 }
