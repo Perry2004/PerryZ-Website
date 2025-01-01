@@ -110,9 +110,41 @@ h2 {
 }
 
 .icon-java {
-    background-image: url("src/assets/java-svgrepo-com.svg");
+    background-image: url("src/assets/icons/java-svgrepo-com.svg");
 }
 
 .icon-matlab {
-    background-image: url("src/assets/matlab-svgrepo-com.svg");
+    background-image: url("src/assets/icons/matlab-svgrepo-com.svg");
+}
+
+.skills-section {
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-text {
+        justify-content: center;
+        align-content: start;
+
+        .btn {
+            display: flex;
+            font-size: 1.25rem;
+
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .external-icon {
+        width: 1.5em;
+        // height: 1em;
+        aspect-ratio: 1;
+        fill: currentColor;
+    }
+
+    .btn:hover {
+        transform: var(--bs-icon-link-transform);
+    }
+
 }
