@@ -16,7 +16,7 @@
   <body>
 
     <!-- nav bar -->
-    <nav class="navbar position-fixed top-0 start-0 w-100 z-1" id="nav-bar">
+    <nav class="navbar position-fixed top-0 start-0 w-100 z-1 d-none d-md-block" id="nav-bar">
       <div class="container fs-3">
         <span id="nav-name">
           Perry Zhu
@@ -43,17 +43,17 @@
 
     </nav>
 
-    <main class="container-fluid" data-bs-spy="scroll" data-bs-target="#nav-bar" data-bs-root-margin="0px 0px -40%"
+    <main class="container-fluid px-0" data-bs-spy="scroll" data-bs-target="#nav-bar" data-bs-root-margin="0px 0px -40%"
       data-bs-smooth-scroll="true" tabindex="0">
 
       <!-- front page -->
       <div class="container-fluid dark-portion mb-0">
         <section id="front-page" class="mb-0">
 
-          <div class="container h-75 d-flex align-items-center">
+          <div class="container-md d-flex align-items-center mb-5 mb-sm-0" id="front-page-content">
             <div class="row">
-              <div class="col-6 offset-1">
-                <h1 class="my-4" id="hello-world">
+              <div class="col-lg-6 offset-lg-1">
+                <h1 class="my-lg-4" id="hello-world">
                   Hello World!
                 </h1>
                 <p class="fs-4">
@@ -64,7 +64,7 @@
                   I'm passionate about software development, machine learning, and computer graphics. Explore my
                   projects, skills, and experiences here!
                 </p>
-                <div>
+                <div class="d-flex flex-column d-sm-inline">
                   <a href="https://github.com/Perry2004" target="_blank" class="btn btn-primary">
                     <i class="bi bi-github"></i> GitHub
                   </a>
@@ -101,7 +101,7 @@
         <div class="container-fluid dark-portion">
           <div class="container about-me-section" id="about-me">
             <section class="row my-5">
-              <div class="col-3 align-items-center justify-content-start d-flex">
+              <div class="col-lg-3 align-items-center justify-content-start d-flex">
                 <h2>
                   About Me
                   </h1>
@@ -132,17 +132,17 @@
         </div>
 
         <!-- projects -->
-        <div class="container" id="projects">
-          <section class="row pb-3">
+        <div class="container d-flex justify-content-center" id="projects">
+          <section class=" pb-3 mx-auto w-100">
             <div class="row my-5">
               <h2>
                 Projects
               </h2>
             </div>
 
-            <div class="row justify-content-evenly row-gap-5">
+            <div class="row justify-content-evenly row-gap-5" id="project-cards-row">
 
-              <div class="col-5">
+              <div class="col-lg-5">
                 <div class="card project-card">
                   <div class="card-body">
                     <h5 class="card-title">
@@ -225,7 +225,7 @@
                 </div>
               </div>
 
-              <div class="col-5">
+              <div class="col-lg-5">
                 <div class="card project-card">
                   <div class="card-body">
                     <h5 class="card-title">
@@ -324,9 +324,7 @@
                 </div>
               </div>
 
-
-
-              <div class="col-5">
+              <div class="col-lg-5">
                 <div class="card project-card">
                   <div class="card-body">
                     <h5 class="card-title">
@@ -415,7 +413,7 @@
                 </div>
               </div>
 
-              <div class="col-5">
+              <div class="col-lg-5">
                 <div class="card project-card">
                   <div class="card-body">
                     <h5 class="card-title">
@@ -522,7 +520,7 @@
             <div class="container">
               <div class="row p-3">
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       Programming Languages
@@ -576,7 +574,7 @@
                   </div>
                 </div>
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       Web Development
@@ -635,7 +633,7 @@
                   </div>
                 </div>
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       Machine Learning & Data Science
@@ -696,7 +694,7 @@
                   </div>
                 </div>
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       Database Design and Management
@@ -751,7 +749,7 @@
                   </div>
                 </div>
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       Math & Statistics
@@ -791,7 +789,7 @@
                   </div>
                 </div>
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       (Human) Languages
@@ -813,7 +811,7 @@
                   </div>
                 </div>
 
-                <div class="card col-4 border-0">
+                <div class="card col-12 col-lg-6 col-xl-4 border-0">
                   <div class="card-body">
                     <h5 class="card-title text-center">
                       Tools & Technologies
@@ -866,7 +864,7 @@
     </main>
 
     <!-- footer -->
-    <div class="container-fluid footer">
+    <footer class="container-fluid footer">
       <div class="container">
         <div class="hstack">
 
@@ -955,9 +953,10 @@
           </div>
 
         </div>
+
       </div>
 
-    </div>
+    </footer>
 
   </body>
 
