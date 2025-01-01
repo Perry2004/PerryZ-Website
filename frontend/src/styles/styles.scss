@@ -148,3 +148,24 @@ h2 {
     }
 
 }
+
+.footer {
+    background-color: rgb(211, 211, 211);
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .icon-group {
+        i {
+            font-size: 1.25rem;
+            margin-right: 1rem;
+        }
+    }
+}
