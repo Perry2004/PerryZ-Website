@@ -266,6 +266,12 @@ h2 {
         border: none;
     }
 
+    #about-me {
+        section {
+            padding: 0 !important;
+        }
+    }
+
     #project-cards-row {
         row-gap: 2rem !important;
     }
