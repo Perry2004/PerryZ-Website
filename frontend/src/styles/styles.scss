@@ -5,12 +5,46 @@
     --bs-icon-link-transform: translate3d(0, -.125rem, 0); // modify bootstrap icon link to move up on hover
 }
 
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1, h2, h3 {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.accordion-header {
+    font-family: "Raleway", serif;
+}
+
+
 body {
     min-height: 100vh;
 }
 
 nav {
-    background-color: white;
+    background-color: rgb(211, 211, 211);
 }
 
 section {
@@ -173,4 +207,20 @@ h2 {
             margin-right: 1rem;
         }
     }
+}
+
+.light-portion {
+    background-color: white;
+    color: black;
+}
+
+.dark-portion {
+    background-color: #181818;
+    color: #E0E0E0;
+}
+
+.about-me-section {
+    padding: 10rem 0;
+    display: flex;
+    align-items: center;
 }
