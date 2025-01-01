@@ -28,7 +28,9 @@
     font-style: normal;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: "Great Vibes", serif;
     font-weight: 400;
     font-style: normal;
@@ -38,6 +40,10 @@ h1, h2, h3 {
     font-family: "Raleway", serif;
 }
 
+#nav-name {
+    font-family: "Great Vibes", serif;
+}
+
 
 body {
     min-height: 100vh;
@@ -45,6 +51,10 @@ body {
 
 nav {
     background-color: rgb(211, 211, 211);
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
 }
 
 section {
@@ -220,6 +230,7 @@ h2 {
 }
 
 .about-me-section {
+    min-height: 100vh;
     padding: 10rem 0;
     display: flex;
     align-items: center;

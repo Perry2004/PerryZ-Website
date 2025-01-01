@@ -16,824 +16,854 @@
   <body>
 
     <!-- nav bar -->
-    <nav class="navbar position-fixed top-0 start-0 w-100 z-1">
+    <nav class="navbar position-fixed top-0 start-0 w-100 z-1" id="nav-bar">
       <div class="container fs-3">
-        Perry Zhu
+        <span id="nav-name">
+          Perry Zhu
+        </span>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#front-page">
+              Home
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about-me">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+        </ul>
+
       </div>
+
     </nav>
 
-    <!-- front page -->
-    <div class="container-fluid dark-portion mb-0">
-      <section id="front-page" class="mb-0">
+    <main class="container-fluid" data-bs-spy="scroll" data-bs-target="#nav-bar" data-bs-root-margin="0px 0px -40%"
+      data-bs-smooth-scroll="true" tabindex="0">
 
-        <div class="container h-75 d-flex align-items-center">
-          <div class="row">
-            <div class="col-6 offset-1">
-              <h1 class="my-4" id="hello-world">
-                Hello World!
-              </h1>
-              <p class="fs-4">
-                Hi, I'm <em>Perry Zhu</em>, a Computer Science and Statistics undergraduate at the University of British
-                Columbia
-                (UBC). <br><br>
-                I'm passionate about software development, machine learning, and computer graphics. Explore my
-                projects, skills, and experiences here!
-              </p>
-              <div>
-                <a href="https://github.com/Perry2004" target="_blank" class="btn btn-primary">
-                  <i class="bi bi-github"></i> GitHub
-                </a>
-                <a href="https://www.linkedin.com/in/perry-z/" target="_blank" class="btn btn-primary">
-                  <i class="bi bi-linkedin"></i> LinkedIn
-                </a>
-                <a href="https://www.instagram.com/perryzhu2004/" target="_blank" class="btn btn-primary">
-                  <i class="bi bi-instagram"></i> Instagram
-                </a>
+      <!-- front page -->
+      <div class="container-fluid dark-portion mb-0">
+        <section id="front-page" class="mb-0">
+
+          <div class="container h-75 d-flex align-items-center">
+            <div class="row">
+              <div class="col-6 offset-1">
+                <h1 class="my-4" id="hello-world">
+                  Hello World!
+                </h1>
+                <p class="fs-4">
+                  Hi, I'm <em>Perry Zhu</em>, a Computer Science and Statistics undergraduate at the University of
+                  British
+                  Columbia
+                  (UBC). <br><br>
+                  I'm passionate about software development, machine learning, and computer graphics. Explore my
+                  projects, skills, and experiences here!
+                </p>
+                <div>
+                  <a href="https://github.com/Perry2004" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-github"></i> GitHub
+                  </a>
+                  <a href="https://www.linkedin.com/in/perry-z/" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-linkedin"></i> LinkedIn
+                  </a>
+                  <a href="https://www.instagram.com/perryzhu2004/" target="_blank" class="btn btn-primary">
+                    <i class="bi bi-instagram"></i> Instagram
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="container-fluid h-25 overflow-hidden border-radius" id="pexels-img-container">
+          <div class="container-fluid h-25 overflow-hidden border-radius" id="pexels-img-container">
 
-          <div class="d-inline-flex h-100 pexels-img-group border-radius">
-            <img src="src/assets/pexels-perry-z-1662054943-28797090.jpg" alt="" class="pexels-img">
-            <img src="src/assets/test1.png" alt="" class="pexels-img">
-            <img src="src/assets/test2.png" alt="" class="pexels-img">
-            <img src="src/assets/test3.jpeg" alt="" class="pexels-img">
-            <img src="src/assets/test4.webp" alt="" class="pexels-img">
+            <div class="d-inline-flex h-100 pexels-img-group border-radius">
+              <img src="src/assets/pexels-perry-z-1662054943-28797090.jpg" alt="" class="pexels-img">
+              <img src="src/assets/test1.png" alt="" class="pexels-img">
+              <img src="src/assets/test2.png" alt="" class="pexels-img">
+              <img src="src/assets/test3.jpeg" alt="" class="pexels-img">
+              <img src="src/assets/test4.webp" alt="" class="pexels-img">
+            </div>
+
           </div>
 
+        </section>
+      </div>
+
+      <!-- contents -->
+      <div class="container-fluid g-0 mt-0">
+
+        <!-- about me -->
+        <div class="container-fluid dark-portion">
+          <div class="container about-me-section" id="about-me">
+            <section class="row my-5">
+              <div class="col-3 align-items-center justify-content-start d-flex">
+                <h2>
+                  About Me
+                  </h1>
+              </div>
+
+              <div class="col about-me-text">
+                <p>
+                  I'm currently pursuing a combined major in Computer Science and Statistics at UBC. My academic journey
+                  and
+                  personal projects reflect my passion for problem-solving, innovation, and continuous learning.
+                </p>
+                <p>
+                  I specialize in areas like machine learning, forward and backward ray tracing, and geometric modeling,
+                  and
+                  I enjoy working on full-stack web development and real-time interactive applications.
+                </p>
+                <p>
+                  I'm always eager to explore new technologies and take on challenging projects that allow me to grow as
+                  a
+                  developer.
+                </p>
+                <a href="src/assets/coop_resume_sw.pdf" download="Perry-Z_resume.pdf" class="btn btn-primary"><i
+                    class="bi bi-file-earmark-person"></i> Check my resume</a>
+              </div>
+
+            </section>
+          </div>
         </div>
 
-      </section>
-    </div>
-
-    <!-- contents -->
-    <div class="container-fluid g-0 mt-0">
-
-      <!-- about me -->
-      <div class="container-fluid dark-portion">
-        <div class="container about-me-section">
-          <section class="row my-5">
-            <div class="col-3 align-items-center justify-content-start d-flex">
+        <!-- projects -->
+        <div class="container" id="projects">
+          <section class="row pb-3">
+            <div class="row my-5">
               <h2>
-                About Me
-                </h1>
+                Projects
+              </h2>
             </div>
 
-            <div class="col about-me-text">
-              <p>
-                I'm currently pursuing a combined major in Computer Science and Statistics at UBC. My academic journey
-                and
-                personal projects reflect my passion for problem-solving, innovation, and continuous learning.
-              </p>
-              <p>
-                I specialize in areas like machine learning, forward and backward ray tracing, and geometric modeling,
-                and
-                I enjoy working on full-stack web development and real-time interactive applications.
-              </p>
-              <p>
-                I'm always eager to explore new technologies and take on challenging projects that allow me to grow as a
-                developer.
-              </p>
-              <a href="src/assets/coop_resume_sw.pdf" download="Perry-Z_resume.pdf" class="btn btn-primary"><i
-                  class="bi bi-file-earmark-person"></i> Check my resume</a>
-            </div>
+            <div class="row justify-content-evenly row-gap-5">
 
+              <div class="col-5">
+                <div class="card project-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Personal Website
+                    </h5>
+                    <h6 class="card-subtitle">
+                      Full-Stack Web Design & Development With <code>HTML</code>, <code>CSS</code>, and
+                      <code>TypeScript</code>
+                    </h6>
+
+                    <div class="accordion accordion-flush" id="accordionFlushOne">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushOne-collapseOne" aria-expanded="false"
+                            aria-controls="flushOne-collapseOne">
+                            Built and hosted a full-stack website using HTML5, Sass, Three.js, and WebGL for 3D
+                            graphics.
+                          </button>
+                        </h2>
+                        <div id="flushOne-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushOne">
+                          <div class="accordion-body">
+                            The website is designed to showcase my projects, skills, and experiences in a visually
+                            appealing
+                            and interactive way. The frontend is built with HTML5, Bootstrap, Sass, TypeScript, and
+                            Three.js. The website is designed in a responsive manner to ensure compatibility with
+                            different
+                            devices and screen sizes.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushOne-collapseTwo" aria-expanded="false"
+                            aria-controls="flushOne-collapseTwo">
+                            Hosted on an AWS Linux EC2 instance with a Node.js backend and Express framework.
+                          </button>
+                        </h2>
+                        <div id="flushOne-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushOne">
+                          <div class="accordion-body">
+                            The backend is constructed with Node.js and Express. It is hosted on an AWS Linux EC2
+                            instance
+                            on my personal domain. The backend is responsible for serving the frontend, handling API
+                            requests, and managing user data. The website is designed to be scalable and maintainable,
+                            with
+                            a focus on performance and security.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushOne-collapseThree" aria-expanded="false"
+                            aria-controls="flushOne-collapseThree">
+                            Currently integrating a MySQL database for user data storage.
+                          </button>
+                        </h2>
+                        <div id="flushOne-collapseThree" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushOne">
+                          <div class="accordion-body">
+                            I'm currently working on integrating a MySQL database to the back end to store some data and
+                            handle API requests. A rough idea was to create a postboard where visitors can leave
+                            comments
+                            along with their names and emails.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                      <a href="https://github.com/Perry2004/PerryZ-Website" target="_blank"
+                        class="icon-link icon-link-hover d-flex align-items-start">
+                        <i class="bi bi-github"></i> Check GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="card project-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      NYC Airbnb Reviews ML Prediction
+                    </h5>
+                    <h6 class="card-subtitle">
+                      Supervised Machine Learning Project Using Python and Multiple Models
+                    </h6>
+
+                    <div class="accordion accordion-flush" id="accordionFlushTwo">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseOne" aria-expanded="false"
+                            aria-controls="flushTwo-collapseOne">
+                            Developed machine learning pipelines using Python to predict the number of Airbnb reviews
+                            per
+                            month.
+                          </button>
+                        </h2>
+                        <div id="flushTwo-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushTwo">
+                          <div class="accordion-body">
+                            Using <code>Python</code>, <code>NumPy</code>, <code>Pandas</code>,
+                            <code>Scikit-learn</code>,
+                            and <code>MatPlotLib</code>, I developed several machine learning pipelines and visualized
+                            and
+                            evaluated their performance on the NYC Airbnb dataset.
+                            <br><br>
+                            The goal was to predict the number of reviews per month based on various features like
+                            price,
+                            location, and room type.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseTwo" aria-expanded="false"
+                            aria-controls="flushTwo-collapseTwo">
+                            Performed extensive preprocessing and feature engineering to improve model performance.
+                          </button>
+                        </h2>
+                        <div id="flushTwo-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushTwo">
+                          <div class="accordion-body">
+                            To achieve higher performance and interpretability, multiple preprocessing and feature
+                            engineering techniques were applied to the dataset.
+                            <br><br>
+                            <ul>
+                              <li>Imputation: instances with missing values in the target column are removed, numerical
+                                features are imputed with the mean, and categorical features are imputed with "missing".
+                              </li>
+                              <li>Standardization: numerical features are standardized using the StandardScaler.</li>
+                              <li>Categorical Encoding: categorical features are encoded using the OneHotEncoder.</li>
+                              <li>Text encoding: text features are encoded using the CountVectorizer.</li>
+                              <li>Discretization: the location features are discretized into bins using the
+                                KBinsDiscretizer.</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseThree" aria-expanded="false"
+                            aria-controls="flushTwo-collapseThree">
+                            Achieved interpretability using SHAP and reduced overfitting with feature selection.
+                          </button>
+                        </h2>
+                        <div id="flushTwo-collapseThree" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushTwo">
+                          <div class="accordion-body">
+                            To explain the model predictions and reduce overfitting, the SHAP library was used to
+                            generate
+                            a
+                            additive plot to show the impact of each feature on the model prediction.
+                            <br><br>
+                            After checking if they make sense, I performed feature selection using
+                            <code>SelectFromModel</code> to reduce the number of features and improve the model's
+                            generalization.
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+
+                    <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                      <a href="https://github.com/Perry2004/NYC-Airbnb-Reviews-ML-Prediction" target="_blank"
+                        class="icon-link icon-link-hover d-flex align-items-start">
+                        <i class="bi bi-github"></i> Check GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+              <div class="col-5">
+                <div class="card project-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      UNO Game Management System
+                    </h5>
+                    <h6 class="card-subtitle">
+                      Full-Stack Data Management Project with MySQL Database
+                    </h6>
+
+                    <div class="accordion accordion-flush" id="accordionFlushThree">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushThree-collapseOne" aria-expanded="false"
+                            aria-controls="flushThree-collapseOne">
+                            Designed a full-stack system for managing UNO game data with a RESTful API.
+                          </button>
+                        </h2>
+                        <div id="flushThree-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushThree">
+                          <div class="accordion-body">
+                            This is project is a full-stack data management system using <code>Node.js</code>,
+                            <code>Express</code>, and <code>MySQL</code>.
+                            <br><br>
+                            The system is designed to store information about the players, games, and cards. The system
+                            is
+                            designed to be user-friendly and easy to use.
+                            The system provides features such as:
+
+                            <ul>
+                              <li>Player registration and information management</li>
+                              <li>Game creation and management including logging the game history</li>
+                              <li>Card management</li>
+                              <li>Game shopping and inventory management</li>
+                            </ul>
+                            A well-designed front-end interface is provided to interact with the backend MySQL database
+                            using Node.js and Express.js</li>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushThree-collapseTwo" aria-expanded="false"
+                            aria-controls="flushThree-collapseTwo">
+                            Built a dynamic front-end interface with JavaScript and asynchronous fetch requests.
+                          </button>
+                        </h2>
+                        <div id="flushThree-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushThree">
+                          <div class="accordion-body">
+                            Constructed a front-end interface with comprehensive form validation, clear visual
+                            notifications, animations, and smooth interaction by avoiding extra refresh using
+                            asynchronous
+                            fetches to replace the default form submission behavior using HTML, CSS, and JavaScript.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushThree-collapseThree" aria-expanded="false"
+                            aria-controls="flushThree-collapseThree">
+                            Implemented SQL queries with sanitization to prevent injection and ensure data security.
+                          </button>
+                        </h2>
+                        <div id="flushThree-collapseThree" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushThree">
+                          <div class="accordion-body">
+                            Tailored SQL DDLs and DML templates in the backend model with sanitization to prevent
+                            injection
+                            for functionalities, including nested group-by aggregation, division, and view creations to
+                            handle user request actions triggered by front-end event listeners.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                      <a href="https://github.com/Perry2004/UNO-Game-Management-System" target="_blank"
+                        class="icon-link icon-link-hover d-flex align-items-start">
+                        <i class="bi bi-github"></i> Check GitHub
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-5">
+                <div class="card project-card">
+                  <div class="card-body">
+                    <h5 class="card-title">
+                      Two Player Snake Game
+                    </h5>
+                    <h6 class="card-subtitle">
+                      Real-Time Interactive Game With Java/MatLab
+                    </h6>
+
+                    <div class="accordion accordion-flush" id="accordionFlushFour">
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushFour-collapseOne" aria-expanded="false"
+                            aria-controls="flushFour-collapseOne">
+                            Developed a real-time game of two versions using Java and MatLab.
+                          </button>
+                        </h2>
+                        <div id="flushFour-collapseOne" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushFour">
+                          <div class="accordion-body">
+                            Constructed a video game that allows two players to play the traditional Snake game on the
+                            same computer.
+                            <br><br>
+                            Developed the game firstly in MatLab with a game engine script by initializing the game
+                            window with self-created stripes, modeling the gameboard in a 2d matrix, maintaining a
+                            synchronous
+                            execution to tick the snake movements and food generation while handling user inputs
+                            asynchronously by event listeners and model updates with callback functions.
+                            <br><br>
+                            Later migrated the MatLab game to Java with two interfaces with Swing and Lanterna libraries
+                            in an object-oriented manner.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushFour-collapseTwo" aria-expanded="false"
+                            aria-controls="flushFour-collapseTwo">
+                            Applied design patterns like MVC and Observer for scalability and maintainability.
+                          </button>
+                        </h2>
+                        <div id="flushFour-collapseTwo" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushFour">
+                          <div class="accordion-body">
+                            The Java version is empowered with singleton, observer, and MVC design patterns to
+                            divide the project into separate components and hierarchies with well-specified interfaces
+                            for
+                            better maintainability and scalability.
+                            <br><br>
+                            The OOP design also features extra functionality for serializing and exporting all game data
+                            into JSON for further reuse.
+                          </div>
+                        </div>
+                      </div>
+                      <div class="accordion-item">
+                        <h2 class="accordion-header">
+                          <button class="accordion-button collapsed accordion-header" type="button"
+                            data-bs-toggle="collapse" data-bs-target="#flushFour-collapseThree" aria-expanded="false"
+                            aria-controls="flushFour-collapseThree">
+                            Achieved 100% unit test coverage with JUnit.
+                          </button>
+                        </h2>
+                        <div id="flushFour-collapseThree" class="accordion-collapse collapse"
+                          data-bs-parent="#accordionFlushFour">
+                          <div class="accordion-body">
+                            While migrating to Java, the program was tested with JUnit to ensure the correctness of the
+                            game
+                            logic and the robustness of the game engine. During the entire development process, the game
+                            maintained a 100% unit test coverage.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="card-link d-flex justify-content-evenly w-100 fs-5">
+                      <a href="https://github.com/Perry2004/Two-Player-Snake-Game-Java" target="_blank"
+                        class="icon-link icon-link-hover d-flex align-items-start">
+                        <i class="bi external-icon icon-java"></i> Check Java version
+                      </a>
+                      <a href="https://github.com/Perry2004/Two-Player-Snake-Game-Matlab" target="_blank"
+                        class="icon-link icon-link-hover d-flex align-items-start">
+                        <i class="bi external-icon icon-matlab"></i> Check MatLab version
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </section>
         </div>
+
+        <!-- skills -->
+        <div class="container" id="skills">
+          <section class="skills-section">
+            <div class="my-3">
+              <h2 class="text-center">
+                Skills
+              </h2>
+            </div>
+
+            <div class="container">
+              <div class="row p-3">
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Programming Languages
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/js.png);"></i>
+                        JavaScript
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/java.png);"></i>
+                        Java
+                      </a>
+                      <a href="https://www.typescriptlang.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/typescript.png);"></i>
+                        TypeScript
+                      </a>
+                      <a href="https://www.python.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/python.png);"></i>
+                        Python
+                      </a>
+                      <a href="https://www.r-project.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/r.png);"></i>
+                        R
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/c.png);"></i>
+                        C
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/c-.png);"></i>
+                        C++
+                      </a>
+                      <a href="https://www.mathworks.com/products/matlab.html" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/matlab-svgrepo-com.svg);"></i>
+                        MatLab
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Web Development
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/html-5.png);"></i>
+                        HTML 5
+                      </a>
+                      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/css-3.png);"></i>
+                        CSS 3
+                      </a>
+                      <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
+                        target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/js.png);"></i>
+                        ECMAScript 6
+                      </a>
+                      <a href="https://www.typescriptlang.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/typescript.png);"></i>
+                        TypeScript
+                      </a>
+                      <a href="https://getbootstrap.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/bootstrap.png);"></i>
+                        Bootstrap
+                      </a>
+                      <a href="https://reactjs.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/react.png);"></i>
+                        React
+                      </a>
+                      <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
+                        target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/responsive-design.png);"></i>
+                        Responsive design
+                      </a>
+                      <a href="https://www.khronos.org/webgl/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/webgl.png);"></i>
+                        WebGL
+                      </a>
+                      <a href="https://threejs.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/3d.png);"></i>
+                        Three.js
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Machine Learning & Data Science
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://www.python.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/python.png);"></i>
+                        Python
+                      </a>
+                      <a href="https://www.r-project.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/r.png);"></i>
+                        R
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Data_preprocessing" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/preprocessing.png);"></i>
+                        Data preprocessing
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Feature_engineering" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/feature-engineering.png);"></i>
+                        Feature engineering
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Recommender_system" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/recommender-system.png);"></i>
+                        Recommender systems
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Time_series" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/time-series.png);"></i>
+                        Time series prediction
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/interpretation.png);"></i>
+                        Interpretation
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Data_visualization" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/visualization.png);"></i>
+                        Visualization
+                      </a>
+                      <a href="https://www.tableau.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/tableau.png);"></i>
+                        Tableau
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Database Design and Management
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://en.wikipedia.org/wiki/Database_design" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/relational-db.png);"></i>
+                        Relational DB design
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/er-model.png);"></i>
+                        ER model
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/normalization.png);"></i>
+                        DB normalization
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Relational_algebra" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/relational-algebra.png);"></i>
+                        Relational algebra
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/sql.png);"></i>
+                        SQL
+                      </a>
+                      <a href="https://www.mysql.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/mysql.png);"></i>
+                        MySQL
+                      </a>
+                      <a href="https://www.oracle.com/database/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/oracle.png);"></i>
+                        OracleDB
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Data_warehouse" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/warehousing.png);"></i>
+                        Data warehousing
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Math & Statistics
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://en.wikipedia.org/wiki/Differential_calculus" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/calculus.png);"></i>
+                        Differential & Integral calculus
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Linear_algebra" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/matrix.png);"></i>
+                        Matrix and linear algebra
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Statistical_inference" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/statistical-inference.png);"></i>
+                        Statistical inference
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/proof.png);"></i>
+                        Mathematical proof
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/probability.png);"></i>
+                        Probability theory
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      (Human) Languages
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://en.wikipedia.org/wiki/English_language" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/english.png);"></i>
+                        English - fluent
+                      </a>
+                      <a href="https://en.wikipedia.org/wiki/Chinese_language" target="_blank"
+                        class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/chinese.png);"></i>
+                        Chinese - native
+                      </a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="card col-4 border-0">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">
+                      Tools & Technologies
+                    </h5>
+                    <div class="card-text d-flex flex-wrap gap-2 h-100 ">
+                      <a href="https://git-scm.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/git.png);"></i>
+                        Git
+                      </a>
+                      <a href="https://github.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/github.png);"></i>
+                        GitHub
+                      </a>
+                      <a href="https://www.docker.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/docker.png);"></i>
+                        Docker
+                      </a>
+                      <a href="https://www.vim.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/vim.png);"></i>
+                        Vim/nvim
+                      </a>
+                      <a href="https://www.zsh.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/zsh.png);"></i>
+                        zsh
+                      </a>
+                      <a href="https://aws.amazon.com/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/aws.png);"></i>
+                        AWS
+                      </a>
+                      <a href="https://www.linux.org/" target="_blank" class="btn btn-outline-success">
+                        <i class="external-icon d-inline-block"
+                          style="background-image: url(src/assets/icons/linux.png);"></i>
+                        Linux
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </div>
+
       </div>
-
-      <!-- projects -->
-      <div class="container">
-        <section class="row pb-3">
-          <div class="row my-5">
-            <h2>
-              Projects
-            </h2>
-          </div>
-
-          <div class="row justify-content-evenly row-gap-5">
-
-            <div class="col-5">
-              <div class="card project-card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Personal Website
-                  </h5>
-                  <h6 class="card-subtitle">
-                    Full-Stack Web Design & Development With <code>HTML</code>, <code>CSS</code>, and <code>TypeScript</code>
-                  </h6>
-
-                  <div class="accordion accordion-flush" id="accordionFlushOne">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushOne-collapseOne" aria-expanded="false"
-                          aria-controls="flushOne-collapseOne">
-                          Built and hosted a full-stack website using HTML5, Sass, Three.js, and WebGL for 3D
-                          graphics.
-                        </button>
-                      </h2>
-                      <div id="flushOne-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushOne">
-                        <div class="accordion-body">
-                          The website is designed to showcase my projects, skills, and experiences in a visually
-                          appealing
-                          and interactive way. The frontend is built with HTML5, Bootstrap, Sass, TypeScript, and
-                          Three.js. The website is designed in a responsive manner to ensure compatibility with
-                          different
-                          devices and screen sizes.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushOne-collapseTwo" aria-expanded="false"
-                          aria-controls="flushOne-collapseTwo">
-                          Hosted on an AWS Linux EC2 instance with a Node.js backend and Express framework.
-                        </button>
-                      </h2>
-                      <div id="flushOne-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushOne">
-                        <div class="accordion-body">
-                          The backend is constructed with Node.js and Express. It is hosted on an AWS Linux EC2
-                          instance
-                          on my personal domain. The backend is responsible for serving the frontend, handling API
-                          requests, and managing user data. The website is designed to be scalable and maintainable,
-                          with
-                          a focus on performance and security.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushOne-collapseThree" aria-expanded="false"
-                          aria-controls="flushOne-collapseThree">
-                          Currently integrating a MySQL database for user data storage.
-                        </button>
-                      </h2>
-                      <div id="flushOne-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushOne">
-                        <div class="accordion-body">
-                          I'm currently working on integrating a MySQL database to the back end to store some data and
-                          handle API requests. A rough idea was to create a postboard where visitors can leave
-                          comments
-                          along with their names and emails.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card-link d-flex justify-content-evenly w-100 fs-5">
-                    <a href="https://github.com/Perry2004/PerryZ-Website" target="_blank"
-                      class="icon-link icon-link-hover d-flex align-items-start">
-                      <i class="bi bi-github"></i> Check GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-5">
-              <div class="card project-card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    NYC Airbnb Reviews ML Prediction
-                  </h5>
-                  <h6 class="card-subtitle">
-                    Supervised Machine Learning Project Using Python and Multiple Models
-                  </h6>
-
-                  <div class="accordion accordion-flush" id="accordionFlushTwo">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseOne" aria-expanded="false"
-                          aria-controls="flushTwo-collapseOne">
-                          Developed machine learning pipelines using Python to predict the number of Airbnb reviews
-                          per
-                          month.
-                        </button>
-                      </h2>
-                      <div id="flushTwo-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushTwo">
-                        <div class="accordion-body">
-                          Using <code>Python</code>, <code>NumPy</code>, <code>Pandas</code>,
-                          <code>Scikit-learn</code>,
-                          and <code>MatPlotLib</code>, I developed several machine learning pipelines and visualized
-                          and
-                          evaluated their performance on the NYC Airbnb dataset.
-                          <br><br>
-                          The goal was to predict the number of reviews per month based on various features like
-                          price,
-                          location, and room type.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseTwo" aria-expanded="false"
-                          aria-controls="flushTwo-collapseTwo">
-                          Performed extensive preprocessing and feature engineering to improve model performance.
-                        </button>
-                      </h2>
-                      <div id="flushTwo-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushTwo">
-                        <div class="accordion-body">
-                          To achieve higher performance and interpretability, multiple preprocessing and feature
-                          engineering techniques were applied to the dataset.
-                          <br><br>
-                          <ul>
-                            <li>Imputation: instances with missing values in the target column are removed, numerical
-                              features are imputed with the mean, and categorical features are imputed with "missing".
-                            </li>
-                            <li>Standardization: numerical features are standardized using the StandardScaler.</li>
-                            <li>Categorical Encoding: categorical features are encoded using the OneHotEncoder.</li>
-                            <li>Text encoding: text features are encoded using the CountVectorizer.</li>
-                            <li>Discretization: the location features are discretized into bins using the
-                              KBinsDiscretizer.</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushTwo-collapseThree" aria-expanded="false"
-                          aria-controls="flushTwo-collapseThree">
-                          Achieved interpretability using SHAP and reduced overfitting with feature selection.
-                        </button>
-                      </h2>
-                      <div id="flushTwo-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushTwo">
-                        <div class="accordion-body">
-                          To explain the model predictions and reduce overfitting, the SHAP library was used to
-                          generate
-                          a
-                          additive plot to show the impact of each feature on the model prediction.
-                          <br><br>
-                          After checking if they make sense, I performed feature selection using
-                          <code>SelectFromModel</code> to reduce the number of features and improve the model's
-                          generalization.
-                        </div>
-                      </div>
-                    </div>
-
-                  </div>
-
-                  <div class="card-link d-flex justify-content-evenly w-100 fs-5">
-                    <a href="https://github.com/Perry2004/NYC-Airbnb-Reviews-ML-Prediction" target="_blank"
-                      class="icon-link icon-link-hover d-flex align-items-start">
-                      <i class="bi bi-github"></i> Check GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-
-
-            <div class="col-5">
-              <div class="card project-card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    UNO Game Management System
-                  </h5>
-                  <h6 class="card-subtitle">
-                    Full-Stack Data Management Project with MySQL Database
-                  </h6>
-
-                  <div class="accordion accordion-flush" id="accordionFlushThree">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushThree-collapseOne" aria-expanded="false"
-                          aria-controls="flushThree-collapseOne">
-                          Designed a full-stack system for managing UNO game data with a RESTful API.
-                        </button>
-                      </h2>
-                      <div id="flushThree-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushThree">
-                        <div class="accordion-body">
-                          This is project is a full-stack data management system using <code>Node.js</code>,
-                          <code>Express</code>, and <code>MySQL</code>.
-                          <br><br>
-                          The system is designed to store information about the players, games, and cards. The system
-                          is
-                          designed to be user-friendly and easy to use.
-                          The system provides features such as:
-
-                          <ul>
-                            <li>Player registration and information management</li>
-                            <li>Game creation and management including logging the game history</li>
-                            <li>Card management</li>
-                            <li>Game shopping and inventory management</li>
-                          </ul>
-                          A well-designed front-end interface is provided to interact with the backend MySQL database
-                          using Node.js and Express.js</li>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushThree-collapseTwo" aria-expanded="false"
-                          aria-controls="flushThree-collapseTwo">
-                          Built a dynamic front-end interface with JavaScript and asynchronous fetch requests.
-                        </button>
-                      </h2>
-                      <div id="flushThree-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushThree">
-                        <div class="accordion-body">
-                          Constructed a front-end interface with comprehensive form validation, clear visual
-                          notifications, animations, and smooth interaction by avoiding extra refresh using
-                          asynchronous
-                          fetches to replace the default form submission behavior using HTML, CSS, and JavaScript.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushThree-collapseThree" aria-expanded="false"
-                          aria-controls="flushThree-collapseThree">
-                          Implemented SQL queries with sanitization to prevent injection and ensure data security.
-                        </button>
-                      </h2>
-                      <div id="flushThree-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushThree">
-                        <div class="accordion-body">
-                          Tailored SQL DDLs and DML templates in the backend model with sanitization to prevent
-                          injection
-                          for functionalities, including nested group-by aggregation, division, and view creations to
-                          handle user request actions triggered by front-end event listeners.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card-link d-flex justify-content-evenly w-100 fs-5">
-                    <a href="https://github.com/Perry2004/UNO-Game-Management-System" target="_blank"
-                      class="icon-link icon-link-hover d-flex align-items-start">
-                      <i class="bi bi-github"></i> Check GitHub
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-5">
-              <div class="card project-card">
-                <div class="card-body">
-                  <h5 class="card-title">
-                    Two Player Snake Game
-                  </h5>
-                  <h6 class="card-subtitle">
-                    Real-Time Interactive Game With Java/MatLab
-                  </h6>
-
-                  <div class="accordion accordion-flush" id="accordionFlushFour">
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushFour-collapseOne" aria-expanded="false"
-                          aria-controls="flushFour-collapseOne">
-                          Developed a real-time game of two versions using Java and MatLab.
-                        </button>
-                      </h2>
-                      <div id="flushFour-collapseOne" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushFour">
-                        <div class="accordion-body">
-                          Constructed a video game that allows two players to play the traditional Snake game on the
-                          same computer.
-                          <br><br>
-                          Developed the game firstly in MatLab with a game engine script by initializing the game
-                          window with self-created stripes, modeling the gameboard in a 2d matrix, maintaining a
-                          synchronous
-                          execution to tick the snake movements and food generation while handling user inputs
-                          asynchronously by event listeners and model updates with callback functions.
-                          <br><br>
-                          Later migrated the MatLab game to Java with two interfaces with Swing and Lanterna libraries
-                          in an object-oriented manner.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushFour-collapseTwo" aria-expanded="false"
-                          aria-controls="flushFour-collapseTwo">
-                          Applied design patterns like MVC and Observer for scalability and maintainability.
-                        </button>
-                      </h2>
-                      <div id="flushFour-collapseTwo" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushFour">
-                        <div class="accordion-body">
-                          The Java version is empowered with singleton, observer, and MVC design patterns to
-                          divide the project into separate components and hierarchies with well-specified interfaces
-                          for
-                          better maintainability and scalability.
-                          <br><br>
-                          The OOP design also features extra functionality for serializing and exporting all game data
-                          into JSON for further reuse.
-                        </div>
-                      </div>
-                    </div>
-                    <div class="accordion-item">
-                      <h2 class="accordion-header">
-                        <button class="accordion-button collapsed accordion-header" type="button"
-                          data-bs-toggle="collapse" data-bs-target="#flushFour-collapseThree" aria-expanded="false"
-                          aria-controls="flushFour-collapseThree">
-                          Achieved 100% unit test coverage with JUnit.
-                        </button>
-                      </h2>
-                      <div id="flushFour-collapseThree" class="accordion-collapse collapse"
-                        data-bs-parent="#accordionFlushFour">
-                        <div class="accordion-body">
-                          While migrating to Java, the program was tested with JUnit to ensure the correctness of the
-                          game
-                          logic and the robustness of the game engine. During the entire development process, the game
-                          maintained a 100% unit test coverage.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="card-link d-flex justify-content-evenly w-100 fs-5">
-                    <a href="https://github.com/Perry2004/Two-Player-Snake-Game-Java" target="_blank"
-                      class="icon-link icon-link-hover d-flex align-items-start">
-                      <i class="bi external-icon icon-java"></i> Check Java version
-                    </a>
-                    <a href="https://github.com/Perry2004/Two-Player-Snake-Game-Matlab" target="_blank"
-                      class="icon-link icon-link-hover d-flex align-items-start">
-                      <i class="bi external-icon icon-matlab"></i> Check MatLab version
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-          </div>
-        </section>
-      </div>
-
-      <!-- skills -->
-      <div class="container">
-        <section class="skills-section">
-          <div class="my-3">
-            <h2 class="text-center">
-              Skills
-            </h2>
-          </div>
-
-          <div class="container">
-            <div class="row p-3">
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    Programming Languages
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/js.png);"></i>
-                      JavaScript
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Java_(programming_language)" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/java.png);"></i>
-                      Java
-                    </a>
-                    <a href="https://www.typescriptlang.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/typescript.png);"></i>
-                      TypeScript
-                    </a>
-                    <a href="https://www.python.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/python.png);"></i>
-                      Python
-                    </a>
-                    <a href="https://www.r-project.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/r.png);"></i>
-                      R
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/C_(programming_language)" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/c.png);"></i>
-                      C
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/C%2B%2B" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/c-.png);"></i>
-                      C++
-                    </a>
-                    <a href="https://www.mathworks.com/products/matlab.html" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/matlab-svgrepo-com.svg);"></i>
-                      MatLab
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    Web Development
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/html-5.png);"></i>
-                      HTML 5
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/css-3.png);"></i>
-                      CSS 3
-                    </a>
-                    <a href="https://www.ecma-international.org/publications-and-standards/standards/ecma-262/"
-                      target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/js.png);"></i>
-                      ECMAScript 6
-                    </a>
-                    <a href="https://www.typescriptlang.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/typescript.png);"></i>
-                      TypeScript
-                    </a>
-                    <a href="https://getbootstrap.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/bootstrap.png);"></i>
-                      Bootstrap
-                    </a>
-                    <a href="https://reactjs.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/react.png);"></i>
-                      React
-                    </a>
-                    <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design"
-                      target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/responsive-design.png);"></i>
-                      Responsive design
-                    </a>
-                    <a href="https://www.khronos.org/webgl/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/webgl.png);"></i>
-                      WebGL
-                    </a>
-                    <a href="https://threejs.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/3d.png);"></i>
-                      Three.js
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    Machine Learning & Data Science
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://www.python.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/python.png);"></i>
-                      Python
-                    </a>
-                    <a href="https://www.r-project.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/r.png);"></i>
-                      R
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Data_preprocessing" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/preprocessing.png);"></i>
-                      Data preprocessing
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Feature_engineering" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/feature-engineering.png);"></i>
-                      Feature engineering
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Recommender_system" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/recommender-system.png);"></i>
-                      Recommender systems
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Time_series" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/time-series.png);"></i>
-                      Time series prediction
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Explainable_artificial_intelligence" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/interpretation.png);"></i>
-                      Interpretation
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Data_visualization" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/visualization.png);"></i>
-                      Visualization
-                    </a>
-                    <a href="https://www.tableau.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/tableau.png);"></i>
-                      Tableau
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    Database Design and Management
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://en.wikipedia.org/wiki/Database_design" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/relational-db.png);"></i>
-                      Relational DB design
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/er-model.png);"></i>
-                      ER model
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Database_normalization" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/normalization.png);"></i>
-                      DB normalization
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Relational_algebra" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/relational-algebra.png);"></i>
-                      Relational algebra
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/SQL" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/sql.png);"></i>
-                      SQL
-                    </a>
-                    <a href="https://www.mysql.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/mysql.png);"></i>
-                      MySQL
-                    </a>
-                    <a href="https://www.oracle.com/database/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/oracle.png);"></i>
-                      OracleDB
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Data_warehouse" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/warehousing.png);"></i>
-                      Data warehousing
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    Math & Statistics
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://en.wikipedia.org/wiki/Differential_calculus" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/calculus.png);"></i>
-                      Differential & Integral calculus
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Linear_algebra" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/matrix.png);"></i>
-                      Matrix and linear algebra
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Statistical_inference" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/statistical-inference.png);"></i>
-                      Statistical inference
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Mathematical_proof" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/proof.png);"></i>
-                      Mathematical proof
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Probability_theory" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/probability.png);"></i>
-                      Probability theory
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    (Human) Languages
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://en.wikipedia.org/wiki/English_language" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/english.png);"></i>
-                      English - fluent
-                    </a>
-                    <a href="https://en.wikipedia.org/wiki/Chinese_language" target="_blank"
-                      class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/chinese.png);"></i>
-                      Chinese - native
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="card col-4 border-0">
-                <div class="card-body">
-                  <h5 class="card-title text-center">
-                    Tools & Technologies
-                  </h5>
-                  <div class="card-text d-flex flex-wrap gap-2 h-100 ">
-                    <a href="https://git-scm.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/git.png);"></i>
-                      Git
-                    </a>
-                    <a href="https://github.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/github.png);"></i>
-                      GitHub
-                    </a>
-                    <a href="https://www.docker.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/docker.png);"></i>
-                      Docker
-                    </a>
-                    <a href="https://www.vim.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/vim.png);"></i>
-                      Vim/nvim
-                    </a>
-                    <a href="https://www.zsh.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/zsh.png);"></i>
-                      zsh
-                    </a>
-                    <a href="https://aws.amazon.com/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/aws.png);"></i>
-                      AWS
-                    </a>
-                    <a href="https://www.linux.org/" target="_blank" class="btn btn-outline-success">
-                      <i class="external-icon d-inline-block"
-                        style="background-image: url(src/assets/icons/linux.png);"></i>
-                      Linux
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-      </div>
-
-    </div>
+    </main>
 
     <!-- footer -->
     <div class="container-fluid footer">
