@@ -28,6 +28,8 @@ function renderAboutMeCanvas(): void {
 
         // don't mess up the canvas size if it's not visible
         if (canvas.getBoundingClientRect().width === 0 || canvas.getBoundingClientRect().height === 0) {
+            // console.log("disappear");
+            canvasVisible = false;
             return;
         }
 
@@ -54,14 +56,17 @@ function renderAboutMeCanvas(): void {
             camera.position.z = 2;
         }
 
-        if (window.getComputedStyle(document.querySelector("#about-me-canvas-container") as HTMLElement).display === "none") {
-            console.log("disappear");
+        // if (window.getComputedStyle(document.querySelector("#about-me-canvas-container") as HTMLElement).display === "none") {
+        //     console.log("disappear");
 
-            canvasVisible = false;
-        }
+        //     canvasVisible = false;
+        // }
+
+        // console.log(canvasVisible);
+        // console.log(window.getComputedStyle(document.querySelector("#about-me-canvas-container") as HTMLElement).display);
 
         if (!canvasVisible && window.getComputedStyle(document.querySelector("#about-me-canvas-container") as HTMLElement).display !== "none") {
-            console.log("re-appear");
+            // console.log("re-appear");
 
             canvasVisible = true;
             tick();
@@ -119,6 +124,16 @@ function renderAboutMeCanvas(): void {
     } else if (size.width < 768 / 2) {
         // md
         camera.position.z = 4;
+    } else {
+        camera.position.z = 2;
+    }
+
+    if (canvas.getBoundingClientRect().width === 0 || canvas.getBoundingClientRect().height === 0) {
+        canvasVisible = false;
+    }
+
+    if (!canvasVisible) {
+        return;
     }
 
     /* ---------------------------- animation related --------------------------- */
@@ -131,9 +146,16 @@ function renderAboutMeCanvas(): void {
 
     const tick = function () {
 
+        // console.log(canvasVisible);
+
+        if (canvas.getBoundingClientRect().width === 0 || canvas.getBoundingClientRect().height === 0) {
+            canvasVisible = false;
+        }
+
         if (!canvasVisible) {
             return;
         }
+
 
         const deltaTime = clock.getDelta();
 
