@@ -1,7 +1,8 @@
 import "./styles/styles.scss";
 import * as bootstrap from 'bootstrap'
 import 'bootstrap-icons/font/bootstrap-icons.css';
-import "./fix.js"; // fix.js for bootstrap 5 acordian
+import "./scripts/fix.js"; // fix.js for bootstrap 5 acordian
+import "./scripts/canvas-3d.ts"; // 3D canvas
 
 // queue of functions to run after the page is loaded
 const runningQueue = new Set<Function>();

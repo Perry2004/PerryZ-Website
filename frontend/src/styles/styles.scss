@@ -120,6 +120,11 @@ h2 {
     animation: 5s rotate-rainbow linear infinite;
 }
 
+#about-me-canvas {
+    width: 100%;
+    height: 100%;
+}
+
 // thanks to https://www.bram.us/2021/01/29/animating-a-css-gradient-border/
 @keyframes rotate-rainbow {
     to {
