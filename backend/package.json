@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch src",
-    "start": "node src/index.ts"
+    "start": "tsx src"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +16,7 @@
     "tsx": "^4.19.2"
   },
   "dependencies": {
+    "dotenv": "^16.4.7",
     "express": "^4.21.2"
   }
 }
