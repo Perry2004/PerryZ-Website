@@ -1,0 +1,340 @@
+// Import all of Bootstrap's CSS
+@import "bootstrap/scss/bootstrap";
+
+:root {
+    --bs-icon-link-transform: translate3d(0, -.125rem, 0); // modify bootstrap icon link to move up on hover
+}
+
+// <uniquifier>: Use a unique and descriptive class name
+// <weight>: Use a value from 100 to 900
+
+.raleway-font {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.great-vibes-regular {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Great Vibes", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.accordion-header {
+    font-family: "Raleway", serif;
+}
+
+#nav-name {
+    font-family: "Great Vibes", serif;
+}
+
+
+body {
+    min-height: 100vh;
+}
+
+nav {
+    background-color: rgb(211, 211, 211);
+
+    .nav-link {
+        font-size: 1.25rem;
+    }
+}
+
+section {
+    margin: 5rem 0;
+}
+
+#front-page {
+    height: 100vh;
+    margin-top: 0;
+}
+
+#hello-world {
+    font-size: 4rem;
+}
+
+#front-page-content {
+    min-height: 75%;
+}
+
+#pexels-img-container {
+    bottom: 3rem;
+    white-space: nowrap;
+    position: relative;
+}
+
+.pexels-img {
+    margin: 0 0.5rem;
+    @include border-radius;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transform: scale(0.9);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+
+    &:hover {
+        transform: scale(1);
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    }
+}
+
+.pexels-img-group {
+    animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+h2 {
+    font-size: 3rem;
+}
+
+.about-me-text {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border: 5px solid;
+    --angle: 0deg;
+    border-image: conic-gradient(from var(--angle), red, yellow, lime, aqua, blue, magenta, red) 1;
+    animation: 5s rotate-rainbow linear infinite;
+}
+
+#about-me-canvas {
+    width: 100%;
+    height: 100%;
+}
+
+// thanks to https://www.bram.us/2021/01/29/animating-a-css-gradient-border/
+@keyframes rotate-rainbow {
+    to {
+        --angle: 360deg;
+    }
+}
+
+@property --angle {
+    syntax: '<angle>';
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.project-card {
+    height: 100%;
+    margin: 0 -1.5rem;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+
+    h5 {
+        font-size: 2rem;
+    }
+
+    h6 {
+        font-size: 1.25rem;
+        padding-left: 0.5rem;
+    }
+
+    ul {
+        font-size: 1.25rem;
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+    }
+
+    .accordion-header {
+        font-size: 1.25rem;
+    }
+
+    .accordion-body {
+        font-size: 1.25rem;
+    }
+
+    &:hover {
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+.external-icon {
+    background-size: contain;
+    align-self: center;
+}
+
+.icon-java {
+    background-image: url("src/assets/icons/java-svgrepo-com.svg");
+}
+
+.icon-matlab {
+    background-image: url("src/assets/icons/matlab-svgrepo-com.svg");
+}
+
+.skills-section {
+    .card-title {
+        font-size: 2rem;
+    }
+
+    .card-text {
+        justify-content: center;
+        align-content: start;
+
+        .btn {
+            display: flex;
+            font-size: 1.25rem;
+
+            i {
+                margin-right: 0.5rem;
+            }
+        }
+    }
+
+    .external-icon {
+        width: 1.5em;
+        aspect-ratio: 1;
+        fill: currentColor;
+    }
+
+    .btn {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+        transform: var(--bs-icon-link-transform);
+        box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.2);
+    }
+
+}
+
+.footer {
+    background-color: rgb(211, 211, 211);
+
+    h5 {
+        font-size: 1.25rem;
+    }
+
+    .footer-col {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .icon-group {
+        i {
+            font-size: 1.25rem;
+            margin-right: 1rem;
+        }
+    }
+}
+
+.light-portion {
+    background-color: white;
+    color: black;
+}
+
+.dark-portion {
+    background-color: #181818;
+    color: #E0E0E0;
+}
+
+.about-me-section {
+    min-height: 100vh;
+    padding: 10rem 0;
+    display: flex;
+    align-items: center;
+}
+
+.popover-header {
+    font-family: "Raleway", serif;
+}
+
+
+@media (max-width: 768px) {
+    .about-me-text {
+        border: none;
+    }
+
+    #about-me {
+        section {
+            padding: 0 !important;
+        }
+    }
+
+    #project-cards-row {
+        row-gap: 2rem !important;
+    }
+
+    .project-card {
+        box-shadow: none;
+
+        &:hover {
+            box-shadow: none;
+        }
+    }
+
+    section {
+        margin: 3rem 0;
+    }
+}
+
+@media (max-width: 576px) {
+    footer {
+        .hstack {
+            flex-direction: column;
+            gap: 1rem;
+            text-align: center;
+        }
+
+        .vr {
+            display: none;
+        }
+
+        .footer-col {
+            align-items: center !important;
+        }
+
+        .icon-group {
+            a {
+                width: 3rem;
+                aspect-ratio: 1;
+                padding: 0.5rem;
+
+                align-items: center;
+                justify-content: center;
+
+                i {
+                    width: 100% !important;
+                    height: 100% !important;
+                    margin-right: 0 !important;
+
+                }
+            }
+        }
+    }
+
+    .project-card {
+        margin: 0;
+    }
+
+}
