@@ -83,7 +83,8 @@ function renderAboutMeCanvas(): void {
     camera.lookAt(0, 0, 0);
 
     /* --------------------------- objects and lights --------------------------- */
-    const blueMarbleTexture = new THREE.TextureLoader().load("src/assets/textures/blue-marble.webp");
+    const blueMarbleTextureUrl = new URL("/src/assets/textures/blue-marble.webp", import.meta.url); // trigger vite to bundle the texture
+    const blueMarbleTexture = new THREE.TextureLoader().load(blueMarbleTextureUrl.href);
     blueMarbleTexture.colorSpace = THREE.SRGBColorSpace;
 
     const earth = new THREE.Mesh(
