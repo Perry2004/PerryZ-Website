@@ -2,13 +2,16 @@
  * This file is used to render 3D objects on the canvas
  */
 import * as THREE from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
-import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js';
-import { lights } from 'three/src/nodes/TSL.js';
+// import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls.js';
 
 function renderAboutMeCanvas(): void {
+    console.log("about-me blue marble rendering start");
+
     /* ----------------------------- initialization ----------------------------- */
     const canvas = document.querySelector("#about-me-canvas") as HTMLCanvasElement;
+
+    let canvasVisible = true;
+
     const size: { width: number, height: number } = {
         width: canvas.clientWidth,
         height: canvas.clientHeight
@@ -22,6 +25,15 @@ function renderAboutMeCanvas(): void {
     renderer.setSize(size.width, size.height);
 
     window.addEventListener("resize", () => {
+
+        // don't mess up the canvas size if it's not visible
+        if (canvas.getBoundingClientRect().width === 0 || canvas.getBoundingClientRect().height === 0) {
+            return;
+        }
+
+        // set back canvas size to 100%
+        canvas.style.width = "100%";
+
         size.width = canvas.getBoundingClientRect().width;
         size.height = canvas.getBoundingClientRect().height;
 
@@ -30,6 +42,30 @@ function renderAboutMeCanvas(): void {
 
         renderer.setSize(size.width, size.height);
         renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+
+        // responsiveness
+        if (size.width < 1200 / 2 && size.width >= 768 / 2) {
+            // lg
+            camera.position.z = 3;
+        } else if (size.width < 768 / 2) {
+            // md
+            camera.position.z = 4;
+        } else {
+            camera.position.z = 2;
+        }
+
+        if (window.getComputedStyle(document.querySelector("#about-me-canvas-container") as HTMLElement).display === "none") {
+            console.log("disappear");
+
+            canvasVisible = false;
+        }
+
+        if (!canvasVisible && window.getComputedStyle(document.querySelector("#about-me-canvas-container") as HTMLElement).display !== "none") {
+            console.log("re-appear");
+
+            canvasVisible = true;
+            tick();
+        }
     })
 
     /* ----------------- setup complete, rendering code below ---------------- */
@@ -57,17 +93,15 @@ function renderAboutMeCanvas(): void {
         })
     );
 
-    earth.material.roughness = 0.5;
-    earth.material.metalness = 0.5;
-    // earth.material.emissive = new THREE.Color("blue");
-    // earth.material.emissiveIntensity = 0.02;
+    earth.material.roughness = 0.45;
+    earth.material.metalness = 0.7;
 
     scene.add(earth);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.1);
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 3);
+    const directionalLight = new THREE.DirectionalLight(0xffffff, 10);
     directionalLight.position.x = 10;
 
     const sunDirectionYRange = [
@@ -77,6 +111,14 @@ function renderAboutMeCanvas(): void {
 
     scene.add(directionalLight);
 
+    /* ----------------------------- responsiveness ----------------------------- */
+    if (size.width < 1200 / 2 && size.width >= 768 / 2) {
+        // lg
+        camera.position.z = 3;
+    } else if (size.width < 768 / 2) {
+        // md
+        camera.position.z = 4;
+    }
 
     /* ---------------------------- animation related --------------------------- */
     const frameRate = 60;
@@ -87,12 +129,17 @@ function renderAboutMeCanvas(): void {
     let sunTiltDirection: "up" | "down" = "up";
 
     const tick = function () {
+
+        if (!canvasVisible) {
+            return;
+        }
+
         const deltaTime = clock.getDelta();
 
         const timeSinceLastRender = (Date.now() - lastRenderTime) / 1000;
-        // console.log("time since last render: ", timeSinceLastRender);
 
         if (earth) {
+
             // rotate
             const rotationAmount = deltaTime;
             earth.rotation.y -= rotationAmount;
