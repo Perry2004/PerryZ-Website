@@ -7,8 +7,8 @@ import https from "https";
 dotenv.config();
 
 const app = express();
-const HTTPS_PORT = process.env.PORT || 443; // Default HTTPS port is 443
-const HTTP_PORT = 80; // Default HTTP port
+const HTTPS_PORT = process.env.PORT || 443; 
+const HTTP_PORT = 80; 
 
 const sslOptions = {
     key: fs.readFileSync("/etc/letsencrypt/live/perryz.net/privkey.pem", "utf8"),
