@@ -100,6 +100,9 @@ function loadImages(): void {
     "https://images.pexels.com/photos/30422639/pexels-photo-30422639/free-photo-of-vibrant-pink-flower-in-sunlit-garden.jpeg",
     "https://images.pexels.com/photos/30422637/pexels-photo-30422637/free-photo-of-cluster-of-green-cacti-in-a-desert-setting.jpeg",
     "https://images.pexels.com/photos/30422636/pexels-photo-30422636/free-photo-of-serene-bonsai-tree-in-natural-outdoor-setting.jpeg",
+    "https://images.pexels.com/photos/30565224/pexels-photo-30565224/free-photo-of-winter-wonderland-with-environmental-message.jpeg",
+    "https://images.pexels.com/photos/30565221/pexels-photo-30565221/free-photo-of-snow-covered-roses-in-winter-scene.jpeg",
+    "https://images.pexels.com/photos/30565220/pexels-photo-30565220/free-photo-of-snow-covered-bench-in-a-winter-park.jpeg",
   ];
 
   // shuffle the image links
