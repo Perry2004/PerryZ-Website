@@ -88,26 +88,55 @@ function renderAboutMeCanvas(): void {
     camera.lookAt(0, 0, 0);
 
     /* --------------------------- objects and lights --------------------------- */
-    const blueMarbleTextureUrl = new URL("/src/assets/textures/blue-marble.webp", import.meta.url); // trigger vite to bundle the texture
+    // Earth texture
+    const blueMarbleTextureUrl = new URL("/src/assets/textures/blue-marble.webp", import.meta.url);
     const blueMarbleTexture = new THREE.TextureLoader().load(blueMarbleTextureUrl.href);
     blueMarbleTexture.colorSpace = THREE.SRGBColorSpace;
 
+    // Earth sphere with improved geometry and material
     const earth = new THREE.Mesh(
-        new THREE.SphereGeometry(1, 32, 32),
-        new THREE.MeshStandardMaterial({
+        new THREE.SphereGeometry(1, 64, 64), // Increased segment count for smoother sphere
+        new THREE.MeshPhysicalMaterial({
             map: blueMarbleTexture,
+            roughness: 0.65,          // More realistic surface roughness
+            metalness: 0.15,          // Slight reflectivity for water
+            envMapIntensity: 0.7,     // Better reaction to lighting
+            clearcoat: 0.2,           // Subtle sheen for oceans
+            clearcoatRoughness: 0.4   // Softens the sheen effect
         })
     );
 
-    earth.material.roughness = 0.45;
-    earth.material.metalness = 0.7;
-
     scene.add(earth);
 
-    const ambientLight = new THREE.AmbientLight(0xffffff, 0.3);
+    // More realistic atmosphere glow effect
+    const atmosphere = new THREE.Mesh(
+        new THREE.SphereGeometry(1.025, 32, 32), // Thinner atmosphere (2.5% instead of 5%)
+        new THREE.MeshBasicMaterial({
+            color: 0xadd8ff, // Lighter, more ethereal blue
+            transparent: true,
+            opacity: 0.07, // Much more subtle
+            side: THREE.BackSide,
+        })
+    );
+    scene.add(atmosphere);
+
+    // For a more realistic edge glow effect
+    const outerGlow = new THREE.Mesh(
+        new THREE.SphereGeometry(1.035, 32, 32),
+        new THREE.MeshBasicMaterial({
+            color: 0xb6e3ff,
+            transparent: true,
+            opacity: 0.03,
+            side: THREE.BackSide,
+        })
+    );
+    scene.add(outerGlow);
+
+    // Improved lighting
+    const ambientLight = new THREE.AmbientLight(0xffffff, 0.4); // Slightly brighter ambient
     scene.add(ambientLight);
 
-    const directionalLight = new THREE.DirectionalLight(0xffffff, 10);
+    const directionalLight = new THREE.DirectionalLight(0xffffeb, 10); // Slightly warmer directional light
     directionalLight.position.x = 10;
 
     const sunDirectionYRange = [
@@ -116,6 +145,10 @@ function renderAboutMeCanvas(): void {
     ]
 
     scene.add(directionalLight);
+
+    // Add hemisphere light for better ambient illumination
+    const hemisphereLight = new THREE.HemisphereLight(0x3366ff, 0x001133, 0.3);
+    scene.add(hemisphereLight);
 
     /* ----------------------------- responsiveness ----------------------------- */
     if (size.width < 1200 / 2 && size.width >= 768 / 2) {
@@ -162,10 +195,13 @@ function renderAboutMeCanvas(): void {
         const timeSinceLastRender = (Date.now() - lastRenderTime) / 1000;
 
         if (earth) {
+            // rotate earth
+            const earthRotationAmount = deltaTime;
+            earth.rotation.y -= earthRotationAmount;
 
-            // rotate
-            const rotationAmount = deltaTime;
-            earth.rotation.y -= rotationAmount;
+            // Make atmosphere rotate slightly differently for a dynamic effect
+            atmosphere.rotation.y -= earthRotationAmount * 0.95;
+            outerGlow.rotation.y -= earthRotationAmount * 0.9;
 
             // ecliptic tilt
             const tiltAmount = 1.2 * deltaTime;
