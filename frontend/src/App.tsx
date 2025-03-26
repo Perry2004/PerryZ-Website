@@ -1,8 +1,16 @@
+import Badge from "react-bootstrap/Badge";
+import Button from "react-bootstrap/Button";
+
 function App() {
   return (
-    <>
-      <h1 className="text-3xl">Hello World!</h1>
-    </>
+    <div>
+      <h1>
+        Example heading
+        <Badge bg="secondary" as={Button}>
+          New
+        </Badge>
+      </h1>
+    </div>
   );
 }
 
