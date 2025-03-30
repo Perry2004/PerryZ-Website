@@ -3,6 +3,7 @@ import path from "path";
 import dotenv from "dotenv";
 import fs from "fs";
 import https from "https";
+import { createProxyMiddleware } from "http-proxy-middleware";
 
 dotenv.config();
 
@@ -11,11 +12,27 @@ const isProd = process.env.NODE_ENV === "production";
 const PORT = process.env.PORT || (isProd ? 443 : 3000);
 const HTTP_PORT = 80;
 
+app.use(
+  "/journal",
+  createProxyMiddleware({
+    target: "http://localhost:8080",
+    changeOrigin: true,
+    pathRewrite: {
+      "^/journal": "/", // Remove /journal prefix when forwarding to the container
+    },
+  })
+);
+
 app.use(express.static(path.join(__dirname, "../dist")));
 
-// Redirect all other routes to the index.html file
-app.get("*", (req, res) => {
-  res.redirect("/");
+// Serve index.html for all routes except /journal (SPA approach)
+app.get("*", (req, res, next) => {
+  // Skip this middleware if the request is for the proxied journal service
+  if (req.path.startsWith("/journal")) {
+    return next();
+  }
+  // Serve index.html for client-side routing
+  res.sendFile(path.join(__dirname, "../dist/index.html"));
 });
 
 if (isProd) {
